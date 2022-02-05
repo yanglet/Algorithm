@@ -4,7 +4,7 @@ class BubbleSort {
         int temp;
 
         for(int i=0; i<sort.length; i++){
-            for(int j=0; j<9-i; j++){
+            for(int j=0; j<sort.length-i; j++){
                 if(sort[j]>sort[j+1]){
                     temp = sort[j];
                     sort[j]=sort[j+1];
