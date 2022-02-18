@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        FastReader fr = new FastReader(); // 문제 해결 소스 코드
+        FastReader fr = new FastReader();
         int a = fr.nextInt();
         int b = fr.nextInt();
         System.out.println(a + b);
