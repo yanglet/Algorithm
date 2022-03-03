@@ -1,4 +1,7 @@
 import java.util.*;
+/**
+if(Arrays.binarySearch(arr, key)  >= 0) -> 이렇게 라이브러리 함수를 사용해도 됨
+*/
 
 class Main {
   public static void main(String[] args) {
