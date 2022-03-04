@@ -20,7 +20,7 @@ public class Main {
       }
     public static int lowerBound(int[] arr, int target){
         int left = 0;
-        int right = arr.length; //right이 길이임 주의*
+        int right = arr.length; //right이 배열의 길이임 주의* (arr.length - 1)이 아님
         while(left < right){
             int mid = (left+right) / 2;
             //target값을 가진 인덱스중 최저 인덱스를 구하기위함
@@ -31,7 +31,7 @@ public class Main {
     }
     public static int upperBound(int[] arr, int target) {
         int left = 0;
-        int right = arr.length; //right이 길이임 주의*
+        int right = arr.length; //right이 배열의 길이임 주의* 
         while (left < right) {
             int mid = (left + right) / 2;
             //target값 보다 큰 값의 바로 다음 인덱스를 구하기위함
