@@ -1,6 +1,6 @@
 import java.util.*;
 /**
-if(Arrays.binarySearch(arr, key)  >= 0) -> 이렇게 라이브러리 함수를 사용해도 됨
+if(Arrays.binarySearch(arr, target)  >= 0) -> 이렇게 라이브러리 함수를 사용해도 됨
 */
 
 class Main {
@@ -23,7 +23,7 @@ class Main {
       System.out.println(result[i]);
     }
   }
-  public static int binarySearch(int[] arr, int key) {
+  public static int binarySearch(int[] arr, int target) {
 
 	int left = 0;					// 탐색 범위의 왼쪽 끝 인덱스
 	int right = arr.length - 1;	// 탐색 범위의 오른쪽 끝 인덱스
@@ -31,17 +31,17 @@ class Main {
 		// left right보다 커지기 전까지 반복한다.
 	while(left <= right) {
  
-		int center = (left + right) / 2;	//중간위치를 구한다.
+		int mid = (left + right) / 2;	//중간위치를 구한다.
  
-		// key값이 중간 위치의 값보다 작을 경우
-		if(key < arr[center]) {
-			right = center - 1;
+		// target값이 중간 위치의 값보다 작을 경우
+		if(target < arr[mid]) {
+			right = mid - 1;
 		}
-		// key값이 중간 위치의 값보다 클 경우
-		else if(key > arr[center]) {
-			left = center + 1;
+		// target값이 중간 위치의 값보다 클 경우
+		else if(target > arr[mid]) {
+			left = mid + 1;
 		}
-		// key값과 중간 위치의 값이 같을 경우
+		// target값과 중간 위치의 값이 같을 경우
 		else {
 			return center;
 		}
