@@ -1,6 +1,8 @@
 import java.util.*;
 import java.io.*;
 
+// 백준 1987
+
 public class Main {
   static int[][] graph;
   static boolean[] visited = new boolean[26]; // 알페벳 숫자만큼
