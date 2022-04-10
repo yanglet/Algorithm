@@ -1,5 +1,7 @@
 import java.util.*;
 
+// 정렬
+
 class Solution {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
