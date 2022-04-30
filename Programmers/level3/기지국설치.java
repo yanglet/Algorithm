@@ -1,5 +1,5 @@
 class Solution {
-    static int check = 0;
+    static int check = 0; // 현재까지 전파가 전달되는 위치
     static int answer = 0;
     public int solution(int n, int[] stations, int w) {
         
